@@ -5,7 +5,8 @@ import { Route, Switch } from 'react-router-dom';
 import App from '../components/App';
 import Home from '../components/Home';
 import Item from '../components/Item';
-import NotFound from '../components/NotFound'
+import NotFound from '../components/NotFound';
+import Formulario from '../components/Formulario';
 
 const AppRoutes = () =>
 <App>
@@ -13,6 +14,7 @@ const AppRoutes = () =>
     <Route exact path="/" component={Home} />
     <Route path="/items" component={Item} />
     {/* <Route path="/" component={Home} /> */}
+    <Route path="/captura" component = {Formulario}  /> 
     <Route component={NotFound} />
   </Switch>
 </App>

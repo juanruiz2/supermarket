@@ -30,10 +30,13 @@ class NavBar extends Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Supermarket</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+            <NavItem>
+                <NavLink href="/captura">Capture Items</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink href="/items">Items</NavLink>
               </NavItem>
@@ -41,7 +44,7 @@ class NavBar extends Component {
                 <NavLink href="/facturacions">Tickets</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink target="_blank" href="https://github.com/mikeermz">GitHub</NavLink>
+                <NavLink target="_blank" href="https://github.com/juanruiz2/">GitHub</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

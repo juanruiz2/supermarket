@@ -5,9 +5,11 @@ import './style.css'
 
 const Footer = ({year}) => (
   <footer> 
-    Mikee Rmz  - {year}
+    Juan Ruiz®  - {year}
   </footer>
 );
+
+
 
 Footer.propTypes = {
   year: PropTypes.number
